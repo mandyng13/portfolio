@@ -195,6 +195,10 @@ h5, .h5 {
     padding-top: var(--space-3xl);
 }
 
+.git_img {
+    filter: invert(1);
+}
+
 /* General styling for the hero section */
 
 section {
@@ -203,9 +207,38 @@ section {
 
 section#hero {
     background: linear-gradient(rgba(26, 26, 64, 0.9), rgba(26, 26, 64, 0.9)),
-        url("/assets/background_image.jpg"); /* TODO: doesnt work */
+         url("assets/background_image.jpg");
     padding-bottom: 4px;
     background-size: cover;
     color: #fafafa;
     --color-accent: #8a2be2;
+}
+
+/* About section */
+
+.about_content {
+    padding: var(--space-xl) 0;
+}
+
+.about_figure {
+    padding: var(--space-xl) 45px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    display: inline-block;
+}
+
+.about_img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.about_caption {
+    padding: var(--space-3xs) 0;
+}
+
+section#about {
+    background-color: #ffffff;
+    color: #333;
+    --color-accent: #ffd700;
 }
